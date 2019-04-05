@@ -1,7 +1,7 @@
 /**********************************************************************************************
 HeapSort.c :
 Author: Jose Neyra
-Description: This is a C program that sorts any 10 element array using a head datastructure sort.
+Description: This is a C program that sorts any 10 element array using a heap data structure sort.
 			   User must enter 10 integer values for program to sort them.
 Date: 04/04/2018
 ***********************************************************************************************/
@@ -63,11 +63,11 @@ void heapSort (int list[ ], int last){
 
 /*    ==================== reheapUp ==================== */
 void reheapUp (int heap[], int newNode){
-	// Local Declarations
-	int parent;
-	int hold;
-	// if not at root of heap
-if (newNode)   {      
+     // Local Declarations
+     int parent;
+     int hold;
+     // if not at root of heap
+     if (newNode)   {      
 	parent = (newNode - 1)/ 2;    
 	if ( heap[newNode] > heap[parent] )	{   // Check child is greater than parent        
 		hold = heap[parent];
@@ -75,7 +75,7 @@ if (newNode)   {
 		heap[newNode] = hold;
 		reheapUp (heap, parent);
 	} // End if heap[]   
-} // End if newNode
+     } // End if newNode
 return;
 }     
 // End reheapUp
