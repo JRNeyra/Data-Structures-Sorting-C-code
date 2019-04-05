@@ -5,7 +5,7 @@ Author: Jose Neyra
 ***************************************************************************************/
 
 
-// NeyraJ_COP3530.01_Project1.cpp : Defines the entry point for the console application.
+// NeyraJ_StackInFixToPostfix.cpp : Defines the entry point for the console application.
 #include "stdafx.h"
 #include<stdio.h>
 #include<stdbool.h>              //For isOperator(char) Line40
